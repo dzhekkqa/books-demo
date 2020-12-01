@@ -1,0 +1,7 @@
+{
+  "speakers": [
+    { "id": "1", "firstName": "Max", "lastName": "Filippe" },
+    { "id": "2", "firstName": "Steven", "lastName": "King" },
+    { "id": "3", "firstName": "Alexander", "lastName": "Pushkin" }
+  ]
+}

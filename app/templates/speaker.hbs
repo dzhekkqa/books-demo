@@ -5,11 +5,15 @@
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
   <div class="top-buffer"></div>
+  {{#if authorize}}
   <table class="table table-bordered">
     <tbody>
+      {{#each model as |speaker|}}
       <tr>
-        <td>{{get-speaker-name "Jacob" "Thornton" "Black"}}</td>
+        <td>{{get-speaker-name speaker.firstName speaker.lastName}}</td>
       </tr>
+      {{/each}}
     </tbody>
   </table>
+  {{/if}}
 </div>
