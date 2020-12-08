@@ -9,9 +9,7 @@
   <table class="table table-bordered">
     <tbody>
       {{#each model as |speaker|}}
-      <tr>
-        <td>{{get-speaker-name speaker.firstName speaker.lastName}}</td>
-      </tr>
+        {{speaker-item firstName=speaker.firstName lastName=speaker.lastName tagName='tr'}}
       {{/each}}
     </tbody>
   </table>
