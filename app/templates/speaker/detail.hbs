@@ -1,6 +1,10 @@
 <div class="detail-form">
-  <div class="title">Speaker's info</div>
+  <h1 style="margin-bottom: 20px">{{ model.lastName }} {{ model.firstName }}</h1>
   <form>
+    <div class="col" style="margin-bottom: 20px; margin-top: 20px;">
+      <input class="btn btn-primary" type="button" value="Редактировать">
+      <input class="btn btn-primary" type="button" value="Удалить">
+    </div>
     <div class="col">
       <input type="text" class="form-control" placeholder="First name">
     </div>
@@ -8,5 +12,13 @@
     <div class="col">
       <input type="text" class="form-control" placeholder="Last name">
     </div>
+    <div class="top-buffer"></div>
+    {{#link-to "speaker"}}
+    <div class="col">
+      <input class="btn btn-primary" type="button" value="Назад">
+    </div>
+    {{/link-to}}
   </form>
 </div>
+
+

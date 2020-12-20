@@ -1,1 +1,5 @@
-<td><a href>{{get-speaker-name firstName lastName}}</a></td>
+<td>
+  {{#link-to "speaker.detail" idSpeaker}}
+  {{get-speaker-name firstName lastName}}
+  {{/link-to}}
+</td>
