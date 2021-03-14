@@ -3,7 +3,7 @@
   <form>
     <div class="col" style="margin-bottom: 20px; margin-top: 20px;">
       <input class="btn btn-primary" type="button" value="Редактировать">
-      <input class="btn btn-primary" type="button" value="Удалить">
+      <input class="btn btn-primary" onclick={{action "deleteSpeaker" model}} type="button" value="Удалить">
     </div>
     <div class="col">
       <input type="text" class="form-control" placeholder="First name">
